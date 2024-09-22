@@ -1,0 +1,188 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+header .logo img {
+    margin-right: 15px;
+    width: 80px;
+    height: auto;
+}
+
+/* Main Container */
+main .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+.section-description {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Partners List */
+.partners-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Partner Item Styles */
+.partner-item {
+    background-color: #fafafa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 calc(50% - 20px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.partner-item h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.partner-item p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.partner-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.partner-item ul li {
+    margin-bottom: 10px;
+}
+
+.partner-item ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.partner-item ul li a:hover {
+    color: #0056b3;
+}
+
+/* Image Button */
+.img-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d0a462;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.img-btn:hover {
+    background-color: #b38b4a;
+    transform: translateY(-3px);
+}
+
+/* Call to Action */
+.call-to-action {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.call-to-action .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.call-to-action .btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Contact Styles */
+.Contact {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.Contact:hover {
+    color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    color: #bbb;
+}
