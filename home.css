@@ -1508,7 +1508,7 @@ a.contact-link:is(:hover, :focus) {
 
   .section.donation {
     background-color: #f8f8f8;
-    padding: 60px 0;
+    padding: 30px 0;
     text-align: center;
     height: 300px;
   }
@@ -1517,13 +1517,14 @@ a.contact-link:is(:hover, :focus) {
     font-size: 32px;
     color: #333;
     margin-bottom: 20px;
+    margin-top: 20px;
   }
   
   .section.donation .section-text {
     font-size: 18px;
     color: #555;
-    line-height: 1.6;
-    max-width: 800px;
+    line-height: 1.;
+    max-width: 1000px;
     margin: 0 auto 20px;
   }
   
