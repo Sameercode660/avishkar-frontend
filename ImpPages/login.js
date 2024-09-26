@@ -23,6 +23,8 @@ loginButton.addEventListener("click", async (e) => {
       data
     );
 
+    loginButton.innerHTML = "Login";
+
     localStorage.setItem("name", response.data.response.firstName);
     localStorage.setItem("id", response.data.response.id);
 
@@ -64,20 +66,25 @@ registerButton.addEventListener("click", async (e) => {
 
     console.log(data);
 
+    registerButton.innerHTML = 'Loading...'
     const response = await axios.post(
       "http://localhost:3000/api/user/register",
       data
     );
+    registerButton.innerHTML = 'Register'
 
     console.log(response.data);
 
-    localStorage.setItem("name", response.data.response.firstName);
-    localStorage.setItem("id", response.data.response.id);
-
-    if (response.data.status == true) {
+    if(response.data.status == true) {
+      localStorage.setItem("name", response.data.response.firstName);
+      localStorage.setItem("id", response.data.response.id);
+      alert(response.data.message)
       window.location.href = "../home.html";
+    } else {
+      alert(response.data.message)
     }
+
   } catch (error) {
-    alert("Unable to register!");
+    console.log(error)
   }
 });

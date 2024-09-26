@@ -55,3 +55,37 @@ button.addEventListener("click", async (e) => {
     alert("Unable to register for the appointment!");
   }
 });
+
+
+// subcription login
+
+const subscriptionEmail = document.querySelector('.subscription-email')
+const subscriptionButton = document.querySelector('.subscription-btn')
+
+subscriptionButton.addEventListener('click', async(e) => {
+  e.preventDefault()
+
+  try {
+    if(!subscriptionEmail.value) {
+      alert('Please enter email or valid email')
+      return;
+    }
+
+    const data = {
+      email: subscriptionEmail.value
+    }
+
+    const response = await axios.post("http://localhost:3000/api/user/subscribe", data)
+
+    console.log(response.data)
+
+    if(response.data.status == true) {
+      alert('Now you are a subscriber')
+      window.location.href = './home.html'
+    } else {
+      alert(response.data.message)
+    }
+  } catch (error) {
+    console.log(error)
+  }
+})
