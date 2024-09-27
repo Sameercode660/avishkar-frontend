@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HAIR4LIFE - Customer List</title>
     <link rel="stylesheet" href="Customer list.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
+      integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 </head>
 
 <body>
@@ -20,7 +26,7 @@
             <li><a href="./Customer_list.html" class="active">Customer List</a></li>
             <!-- <li><a href="./Sales_report.html">Sales Report</a></li>
             <li><a href="./Invoices.html">Invoices</a></li> -->
-            <li><a href="./Appointment.html">Search Appointment</a></li>
+            <li><a href="./Search_Appointment.html">Search Appointment</a></li>
             <!-- <li><a href="./Search_Invoice.html">Search Invoice</a></li> -->
         </ul>
     </div>
@@ -42,12 +48,11 @@
                         <th>Email</th>
                         <th>Phone</th>
                         <th>Joined Date</th>
-                        <th>Last Visit</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
+                <tbody class="tableBody">
+                    <!-- <tr>
                         <td>CUST001</td>
                         <td>John </td>
                         <td>john@example.com</td>
@@ -87,7 +92,7 @@
                             <button class="action-btn delete">Delete</button>
                         </td>
                     </tr>
-                    <!-- Additional rows can be added here -->
+                    Additional rows can be added here -->
                 </tbody>
             </table>
         </div>
@@ -96,6 +101,7 @@
             <p>&copy; 2024 HAIR4LIFE Admin Panel.</p>
         </div>
     </div>
+    <script src="./Customer_list.js"></script>
 </body>
 
 </html>

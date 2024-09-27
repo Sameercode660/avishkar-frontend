@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salon Management System - Admin Panel</title>
     <link rel="stylesheet" href="Admin.css">
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
+    integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
 </head>
 
 <body>
@@ -36,22 +42,22 @@
             <div class="card">
                 <h3>Total</h3>
                 <p>Customer</p>
-                <p class="number">4</p>
+                <span class="number total-customer">0</span>
             </div>
             <div class="card">
                 <h3>Total</h3>
                 <p>Appointment</p>
-                <p class="number">9</p>
+                <span class="number total-appointment" >0</span>
             </div>
             <div class="card">
                 <h3>Total</h3>
                 <p>Accepted Apt</p>
-                <p class="number">5</p>
+                <span class="number total-appointment-accepted">0</span>
             </div>
             <div class="card">
                 <h3>Total</h3>
                 <p>Rejected Apt</p>
-                <p class="number">5</p>
+                <span class="number total-appointment-rejected">0</span>
             </div>
             <!-- <div class="card">
                 <h3>Total</h3>
@@ -79,6 +85,7 @@
             <p>&copy; 2024 HAIR4LIFE Admin Panel.</p>
         </div>
     </div>
+    <script src="./Admin.js"></script>
 </body>
 
 </html>

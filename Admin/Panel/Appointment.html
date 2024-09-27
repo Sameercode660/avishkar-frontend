@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HAIR4LIFE - Appointments</title>
     <link rel="stylesheet" href="Appointment.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
+      integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 </head>
 <body>
     <div class="sidebar">
@@ -18,7 +24,7 @@
             <li><a href="./Customer_list.html">Customer List</a></li>
             <!-- <li><a href="./Sales_report.html">Sales Report</a></li>
             <li><a href="./Invoices.html">Invoices</a></li> -->
-            <li><a href="./Appointment.html">Search Appointment</a></li>
+            <li><a href="./Search_Appointment.html">Search Appointment</a></li>
             <!-- <li><a href="./Search_Invoice.html">Search Invoice</a></li> -->
         </ul>
     </div>
@@ -44,8 +50,8 @@
                         <th>Actions</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
+                <tbody class="appointment-body">
+                    <!-- <tr>
                         <td>APT001</td>
                         <td>John</td>
                         <td>Haircut</td>
@@ -80,7 +86,7 @@
                             <button class="action-btn">Edit</button>
                             <button class="action-btn delete">Delete</button>
                         </td>
-                    </tr>
+                    </tr> -->
                 </tbody>
             </table>
         </div>
@@ -89,5 +95,6 @@
             <p>&copy; 2024 HAIR4LIFE Admin Panel.</p>
         </div>
     </div>
+    <script src="./Appointment.js"></script>
 </body>
 </html>
